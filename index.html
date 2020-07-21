@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="alert">Your message has been sent</div>
+    <h1>Chat App</h1>
+<form id="contactForm" action="index.html"> 
+    <fieldset> 
+        <legend>Message</legend> 
+    <span>Name : </span><input placeholder="Enter your name..." id="name" required type="text"><br>
+    <span>Email : </span><input placeholder="Enter your email..." id="email" required type="text"><br>
+    <span>Your Message : <br></span><textarea id="message" name="comments" >Enter your comments...</textarea>
+    <br>
+    <button id="btn" type="submit" onclick="sendMesssage()">Submit</button>
+</fieldset>
+</form>
+
+<!-- second part -->
+<p>
+  <ol style="width: 100%; border: 1px solid black; color: blue; " id="scoreList">
+   <span>Comments
+   </span>
+  </ol>
+</p>  
+
+
+
+  <!-- second part -->
+
+
+
+  
+<!-- The core Firebase JS SDK is always required and must be listed first --> 
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase.js"></script>
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+</html>
